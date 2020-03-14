@@ -20,9 +20,9 @@ dependencies {
 }
 
 task myclass(type: Jar, dependsOn: shadowJar) {
-    archiveFileName = 'myclass.jar'
+    archiveFileName = 'mymain.jar'
     manifest {
-        attributes('Main-Class': 'MyClass')
+        attributes('Main-Class': 'MyMain')
     }
     from zipTree(shadowJar.archiveFile)
 }
