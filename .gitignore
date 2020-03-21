@@ -4,6 +4,12 @@
 target
 build
 out
+.project
+.classpath
+.settings
+.factorypath
+gradlew
+gradlew.bat
 
 # Compiled class file
 *.class
