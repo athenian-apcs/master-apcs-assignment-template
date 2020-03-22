@@ -4,12 +4,8 @@
 target
 build
 out
-.project
-.classpath
-.settings
-.factorypath
-#gradlew
-#gradlew.bat
+
+.theia/launch.json
 
 # Compiled class file
 *.class
