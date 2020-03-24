@@ -1,12 +1,12 @@
 plugins {
     id 'java'
-    id 'idea'
-    id 'com.github.johnrengelman.shadow' version '5.2.0'
-    id "com.github.ben-manes.versions" version '0.28.0'
+    id 'application'
 }
 
 group 'org.athenian'
 version '1.0-SNAPSHOT'
+
+mainClassName = 'MyMain'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -17,14 +17,6 @@ repositories {
 
 dependencies {
     testImplementation('org.junit.jupiter:junit-jupiter:5.6.0')
-}
-
-task myclass(type: Jar, dependsOn: shadowJar) {
-    archiveFileName = 'mymain.jar'
-    manifest {
-        attributes('Main-Class': 'MyMain')
-    }
-    from zipTree(shadowJar.archiveFile)
 }
 
 test {
