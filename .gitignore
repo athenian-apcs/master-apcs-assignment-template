@@ -4,6 +4,7 @@
 target
 build
 out
+*.iml
 
 .theia/launch.json
 
