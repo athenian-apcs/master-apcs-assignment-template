@@ -6,6 +6,9 @@ build
 out
 *.iml
 
+.settings
+.project
+
 .theia/launch.json
 
 # Compiled class file
